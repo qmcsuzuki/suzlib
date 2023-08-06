@@ -1,0 +1,6 @@
+- 次のリンクで CI を導入する
+  - https://online-judge-tools.github.io/verification-helper/installer.ja.html
+- 失敗するので、workflow から不必要な言語を削除する
+- 失敗するので、Settings -> （左列の） actions -> general -> Workflow permissions で Read and write permitions を設定
+- 成功する
+- 
