@@ -2,6 +2,11 @@ name: verify
 
 on: push
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+
 jobs:
   verify:
     runs-on: ubuntu-latest
