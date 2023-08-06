@@ -2,5 +2,13 @@
   - https://online-judge-tools.github.io/verification-helper/installer.ja.html
 - 失敗するので、workflow から不必要な言語を削除する
 - 失敗するので、Settings -> （左列の） actions -> general -> Workflow permissions で Read and write permitions を設定
-- 成功する
-- 
+- テストに成功する
+- 「ドキュメントが自動生成されるように設定するには」にしたがう
+  - トークンを作る
+    - 右上（自分のアカウント） -> Settings -> 左列最下部の developer settings -> personal access tokens -> Tokens(classic)
+    - generate new token で、repo に権限を持つトークンを作成
+  - 設定する
+    - リポジトリの Settings -> 左列の security - secrets and variables - actions
+    - Repository secrets　に、GH_PAT という名前でさっき作ったトークンを貼り付け
+
+- トークンが期限切れになったら？？？？
