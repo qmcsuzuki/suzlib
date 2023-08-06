@@ -6,11 +6,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/Helloworld.py
       title: example/Helloworld.py
-  - name: example/test
-    pages:
-    - icon: ':warning:'
-      path: example/test/hello2.py
-      title: example/test/hello2.py
   - name: string
     pages:
     - icon: ':warning:'
@@ -25,6 +20,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/helloworld.test.py
       title: example/helloworld.test.py
+  - name: example/test
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: example/test/hello2.test.py
+      title: example/test/hello2.test.py
   - name: .
     pages:
     - icon: ':heavy_check_mark:'

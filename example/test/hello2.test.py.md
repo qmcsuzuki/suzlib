@@ -8,7 +8,7 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
     links:
@@ -24,16 +24,16 @@ data:
     \nif __name__ == '__main__':\n    main()\n"
   dependsOn:
   - example/Helloworld.py
-  isVerificationFile: false
-  path: example/test/hello2.py
+  isVerificationFile: true
+  path: example/test/hello2.test.py
   requiredBy: []
-  timestamp: '2023-08-06 17:53:45+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2023-08-06 18:29:38+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: example/test/hello2.py
+documentation_of: example/test/hello2.test.py
 layout: document
 redirect_from:
-- /library/example/test/hello2.py
-- /library/example/test/hello2.py.html
-title: example/test/hello2.py
+- /verify/example/test/hello2.test.py
+- /verify/example/test/hello2.test.py.html
+title: example/test/hello2.test.py
 ---

@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: example/test/hello2.py
-    title: example/test/hello2.py
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: example/helloworld.test.py
     title: example/helloworld.test.py
+  - icon: ':heavy_check_mark:'
+    path: example/test/hello2.test.py
+    title: example/test/hello2.test.py
   _isVerificationFailed: false
   _pathExtension: py
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -24,12 +24,12 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: example/Helloworld.py
-  requiredBy:
-  - example/test/hello2.py
+  requiredBy: []
   timestamp: '2023-08-06 16:48:26+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - example/helloworld.test.py
+  - example/test/hello2.test.py
 documentation_of: example/Helloworld.py
 layout: document
 redirect_from:
