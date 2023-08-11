@@ -41,10 +41,5 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/test/hello2.test.py
       title: example/test/hello2.test.py
-  - name: .
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
 layout: toppage
 ---
