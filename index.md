@@ -6,7 +6,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/BinaryHeap.py
       title: data_structure/BinaryHeap.py
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: data_structure/IntervalHeap.py
       title: data_structure/IntervalHeap.py
   - name: example
@@ -25,6 +25,9 @@ data:
   verificationCategories:
   - name: data_structure/test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: data_structure/test/IntervalHeap.test.py
+      title: data_structure/test/IntervalHeap.test.py
     - icon: ':heavy_check_mark:'
       path: data_structure/test/binaryheap.test.py
       title: data_structure/test/binaryheap.test.py
