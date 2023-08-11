@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: data-structure
+    pages:
+    - icon: ':warning:'
+      path: data-structure/Binaryheap.py
+      title: data-structure/Binaryheap.py
   - name: example
     pages:
     - icon: ':heavy_check_mark:'
