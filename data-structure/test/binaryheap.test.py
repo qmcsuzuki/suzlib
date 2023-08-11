@@ -1,4 +1,4 @@
-# verification-helper: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP2_2_C
+# verification-helper: https://onlinejudge.u-aizu.ac.jp/courses/lesson/8/ITP2/2/ITP2_2_C
 import data-structure.BinaryHeap
 import sys
 readline = sys.stdin.readline
