@@ -1,11 +1,14 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':heavy_check_mark:'
+    path: data_structure/BinaryHeap.py
+    title: data_structure/BinaryHeap.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/8/ITP2/2/ITP2_2_C
     links:
@@ -23,12 +26,13 @@ data:
     \        if t==0:\n            q[i].heappush(lst[0])\n        elif t==1:\n   \
     \         if q[i]: print(q[i].top())\n        else:\n            if q[i]: q[i].heappop()\n\
     \nif __name__ == '__main__':\n    main()\n"
-  dependsOn: []
+  dependsOn:
+  - data_structure/BinaryHeap.py
   isVerificationFile: true
   path: data_structure/test/binaryheap.test.py
   requiredBy: []
-  timestamp: '2023-08-11 15:19:15+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2023-08-11 15:23:26+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: data_structure/test/binaryheap.test.py
 layout: document

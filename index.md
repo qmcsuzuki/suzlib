@@ -3,9 +3,9 @@ data:
   libraryCategories:
   - name: data_structure
     pages:
-    - icon: ':warning:'
-      path: data_structure/Binaryheap.py
-      title: data_structure/Binaryheap.py
+    - icon: ':heavy_check_mark:'
+      path: data_structure/BinaryHeap.py
+      title: data_structure/BinaryHeap.py
   - name: example
     pages:
     - icon: ':heavy_check_mark:'
@@ -22,7 +22,7 @@ data:
   verificationCategories:
   - name: data_structure/test
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: data_structure/test/binaryheap.test.py
       title: data_structure/test/binaryheap.test.py
   - name: example
