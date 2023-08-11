@@ -20,6 +20,11 @@ data:
       path: string/Zalgorithm.py
       title: string/Zalgorithm.py
   verificationCategories:
+  - name: data-structure/test
+    pages:
+    - icon: ':x:'
+      path: data-structure/test/binaryheap.test.py
+      title: data-structure/test/binaryheap.test.py
   - name: example
     pages:
     - icon: ':heavy_check_mark:'
