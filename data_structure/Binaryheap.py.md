@@ -37,15 +37,15 @@ data:
     \            self._shift_down(i)\n"
   dependsOn: []
   isVerificationFile: false
-  path: data-structure/Binaryheap.py
+  path: data_structure/Binaryheap.py
   requiredBy: []
-  timestamp: '2023-08-11 14:59:02+09:00'
+  timestamp: '2023-08-11 15:19:43+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: data-structure/Binaryheap.py
+documentation_of: data_structure/Binaryheap.py
 layout: document
 redirect_from:
-- /library/data-structure/Binaryheap.py
-- /library/data-structure/Binaryheap.py.html
-title: data-structure/Binaryheap.py
+- /library/data_structure/Binaryheap.py
+- /library/data_structure/Binaryheap.py.html
+title: data_structure/Binaryheap.py
 ---

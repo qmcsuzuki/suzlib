@@ -1,11 +1,11 @@
 ---
 data:
   libraryCategories:
-  - name: data-structure
+  - name: data_structure
     pages:
     - icon: ':warning:'
-      path: data-structure/Binaryheap.py
-      title: data-structure/Binaryheap.py
+      path: data_structure/Binaryheap.py
+      title: data_structure/Binaryheap.py
   - name: example
     pages:
     - icon: ':heavy_check_mark:'
@@ -20,11 +20,11 @@ data:
       path: string/Zalgorithm.py
       title: string/Zalgorithm.py
   verificationCategories:
-  - name: data-structure/test
+  - name: data_structure/test
     pages:
     - icon: ':x:'
-      path: data-structure/test/binaryheap.test.py
-      title: data-structure/test/binaryheap.test.py
+      path: data_structure/test/binaryheap.test.py
+      title: data_structure/test/binaryheap.test.py
   - name: example
     pages:
     - icon: ':heavy_check_mark:'
