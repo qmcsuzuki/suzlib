@@ -18,7 +18,8 @@ class IntervalHeap:
             if v < self.data[-2]:
                 self.data[L-1], self.data[L-2] = self.data[L-2],self.data[L-1]
                 self._shift_up_min(L-2)
-            self._shift_up_max(L-1)
+            else:
+                self._shift_up_max(L-1)
         else:
             self._shift_up_min(L-1)
             if v == self.data[-1]:
@@ -68,7 +69,6 @@ class IntervalHeap:
 
     def _shift_down_min(self, idx: int):
         L = len(self.data)
-        if not L: return
         while idx*2+2 < L:
             c1 = idx*2+2
             c2 = c1+2
@@ -82,7 +82,6 @@ class IntervalHeap:
 
     def _shift_down_max(self, idx: int):
         L = len(self.data)
-        if not L: return
         while idx*2+1 < L:
             c1 = idx*2+1
             c2 = c1+2
