@@ -23,7 +23,7 @@ data:
     \ maxheap: {self.data[1::2]}\"\n\n    def heappush(self, v: int):\n        self.data.append(v)\n\
     \        L = len(self.data)\n        if L%2 == 0:\n            if v < self.data[-2]:\n\
     \                self.data[L-1], self.data[L-2] = self.data[L-2],self.data[L-1]\n\
-    \                self._shift_up_min(L-2)\n            self._shift_up_max(L-1)\n\
+    \                self._shift_up_min(L-2)\n            else:\n                self._shift_up_max(L-1)\n\
     \        else:\n            self._shift_up_min(L-1)\n            if v == self.data[-1]:\n\
     \                self._shift_up_max(L-1)\n\n    def pop_min(self):\n        if\
     \ len(self.data) <= 2:\n            return self.data.pop(0)\n        res = self.data[0]\n\
@@ -41,25 +41,24 @@ data:
     \ | 1\n            if self.data[idx] > self.data[par]:\n                self.data[idx],\
     \ self.data[par] = self.data[par], self.data[idx]\n                idx = par\n\
     \            else:\n                return\n\n    def _shift_down_min(self, idx:\
-    \ int):\n        L = len(self.data)\n        if not L: return\n        while idx*2+2\
-    \ < L:\n            c1 = idx*2+2\n            c2 = c1+2\n            nxt = c2\
-    \ if c2 < L and self.data[c1] > self.data[c2] else c1\n            if self.data[idx]\
-    \ <= self.data[nxt]:\n                return\n            self.data[idx],self.data[nxt]\
-    \ = self.data[nxt],self.data[idx]\n            idx = nxt\n            if idx+1\
-    \ < L and self.data[idx] > self.data[idx+1]:\n                self.data[idx],\
-    \ self.data[idx+1] = self.data[idx+1], self.data[idx]\n\n    def _shift_down_max(self,\
-    \ idx: int):\n        L = len(self.data)\n        if not L: return\n        while\
-    \ idx*2+1 < L:\n            c1 = idx*2+1\n            c2 = c1+2\n            nxt\
-    \ = c2 if c2 < L and self.data[c1] < self.data[c2] else c1\n            if self.data[idx]\
-    \ >= self.data[nxt]:\n                return\n            self.data[idx],self.data[nxt]\
-    \ = self.data[nxt],self.data[idx]\n            idx = nxt\n            if idx-1\
-    \ < L and self.data[idx-1] > self.data[idx]:\n                self.data[idx-1],\
-    \ self.data[idx] = self.data[idx], self.data[idx-1]\n"
+    \ int):\n        L = len(self.data)\n        while idx*2+2 < L:\n            c1\
+    \ = idx*2+2\n            c2 = c1+2\n            nxt = c2 if c2 < L and self.data[c1]\
+    \ > self.data[c2] else c1\n            if self.data[idx] <= self.data[nxt]:\n\
+    \                return\n            self.data[idx],self.data[nxt] = self.data[nxt],self.data[idx]\n\
+    \            idx = nxt\n            if idx+1 < L and self.data[idx] > self.data[idx+1]:\n\
+    \                self.data[idx], self.data[idx+1] = self.data[idx+1], self.data[idx]\n\
+    \n    def _shift_down_max(self, idx: int):\n        L = len(self.data)\n     \
+    \   while idx*2+1 < L:\n            c1 = idx*2+1\n            c2 = c1+2\n    \
+    \        nxt = c2 if c2 < L and self.data[c1] < self.data[c2] else c1\n      \
+    \      if self.data[idx] >= self.data[nxt]:\n                return\n        \
+    \    self.data[idx],self.data[nxt] = self.data[nxt],self.data[idx]\n         \
+    \   idx = nxt\n            if idx-1 < L and self.data[idx-1] > self.data[idx]:\n\
+    \                self.data[idx-1], self.data[idx] = self.data[idx], self.data[idx-1]\n"
   dependsOn: []
   isVerificationFile: false
   path: data_structure/IntervalHeap.py
   requiredBy: []
-  timestamp: '2023-08-11 19:55:38+09:00'
+  timestamp: '2023-08-12 18:04:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - data_structure/test/IntervalHeap.test.py
