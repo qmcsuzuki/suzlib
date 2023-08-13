@@ -3,6 +3,9 @@ data:
   libraryCategories:
   - name: data_structure
     pages:
+    - icon: ':warning:'
+      path: data_structure/BIT.py
+      title: data_structure/BIT.py
     - icon: ':heavy_check_mark:'
       path: data_structure/BinaryHeap.py
       title: data_structure/BinaryHeap.py
