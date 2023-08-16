@@ -1,5 +1,5 @@
 from heapq import *
-class deletable_heapq:
+class DeletableHeapq:
     """
     削除可能heapq
     削除する元があることを仮定している（必要なときは別途 set や dict を持つ）
