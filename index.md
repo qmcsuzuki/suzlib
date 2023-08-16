@@ -9,6 +9,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/BinaryHeap.py
       title: data_structure/BinaryHeap.py
+    - icon: ':warning:'
+      path: data_structure/DeletableHeapq.py
+      title: data_structure/DeletableHeapq.py
     - icon: ':heavy_check_mark:'
       path: data_structure/IntervalHeap.py
       title: data_structure/IntervalHeap.py
