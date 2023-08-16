@@ -20,10 +20,11 @@ data:
     \u5225\u9014 set \u3084 dict \u3092\u6301\u3064\uFF09\n    \"\"\"\n    def __init__(self,\
     \ initial = []):\n        if initial:\n            self.q = initial\n        \
     \    heapify(self.q)\n        else: self.q = []\n        self.q_del = []\n\n \
-    \   def propagate(self):\n        while self.q_del and self.q[0] == self.q_del[0]:\n\
+    \   def __len__(self):\n        return len(self.q) - len(self.q_del)        \n\
+    \    \n    def __str__(self):\n        return f\"queue:{self.q}, del:{self.q_del}\"\
+    \n\n    def propagate(self):\n        while self.q_del and self.q[0] == self.q_del[0]:\n\
     \            heappop(self.q)\n            heappop(self.q_del)\n\n    def heappop(self):\n\
-    \        self.propagate()\n        return heappop(self.q)\n    \n    def __len__(self):\n\
-    \        return len(self.q) - len(self.q_del)        \n\n    def top(self):\n\
+    \        self.propagate()\n        return heappop(self.q)\n    \n    def top(self):\n\
     \        self.propagate()\n        return self.q[0]\n            \n    def remove(self,x):\n\
     \        heappush(self.q_del,x)\n\n    def heappush(self,x):\n        heappush(self.q,x)\n"
   dependsOn: []
