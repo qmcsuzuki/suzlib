@@ -11,6 +11,12 @@ class DeletableHeapq:
         else: self.q = []
         self.q_del = []
 
+    def __len__(self):
+        return len(self.q) - len(self.q_del)        
+    
+    def __str__(self):
+        return f"queue:{self.q}, del:{self.q_del}"
+
     def propagate(self):
         while self.q_del and self.q[0] == self.q_del[0]:
             heappop(self.q)
@@ -20,9 +26,6 @@ class DeletableHeapq:
         self.propagate()
         return heappop(self.q)
     
-    def __len__(self):
-        return len(self.q) - len(self.q_del)        
-
     def top(self):
         self.propagate()
         return self.q[0]
