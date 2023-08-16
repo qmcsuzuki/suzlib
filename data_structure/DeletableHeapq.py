@@ -6,7 +6,7 @@ class DeletableHeapq:
     """
     def __init__(self, initial = []):
         if initial:
-            self.q = initial
+            self.q = initial[::]
             heapify(self.q)
         else: self.q = []
         self.q_del = []
