@@ -32,6 +32,9 @@ data:
   - name: data_structure/test
     pages:
     - icon: ':heavy_check_mark:'
+      path: data_structure/test/DeletableHeapq.test.py
+      title: data_structure/test/DeletableHeapq.test.py
+    - icon: ':heavy_check_mark:'
       path: data_structure/test/IntervalHeap.test.py
       title: data_structure/test/IntervalHeap.test.py
     - icon: ':heavy_check_mark:'
