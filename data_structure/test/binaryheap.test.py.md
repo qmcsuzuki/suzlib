@@ -3,9 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/8/ITP2/2/ITP2_2_C
     links:
@@ -18,7 +18,7 @@ data:
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/lesson/8/ITP2/2/ITP2_2_C\n\
     from pathlib import Path\nimport sys\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent))\n\
-    from data_structure.BibaryHeap import BinaryHeap\nreadline = sys.stdin.readline\n\
+    from data_structure.BinaryHeap import BinaryHeap\nreadline = sys.stdin.readline\n\
     \ndef main():\n    n,Q = map(int,readline().split())\n    q = [BinaryHeap([],lambda\
     \ x:-x) for _ in range(n)]\n    for _ in range(Q):\n        t,i,*lst = map(int,readline().split())\n\
     \        if t==0:\n            q[i].heappush(lst[0])\n        elif t==1:\n   \
@@ -29,7 +29,7 @@ data:
   path: data_structure/test/binaryheap.test.py
   requiredBy: []
   timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: data_structure/test/binaryheap.test.py
 layout: document

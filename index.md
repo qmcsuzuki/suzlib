@@ -42,7 +42,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/test/IntervalHeap.test.py
       title: data_structure/test/IntervalHeap.test.py
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: data_structure/test/binaryheap.test.py
       title: data_structure/test/binaryheap.test.py
   - name: example
