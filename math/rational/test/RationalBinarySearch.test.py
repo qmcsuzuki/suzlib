@@ -1,10 +1,12 @@
 # verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208
-from math.rational import RationalBinarySearch
-
+from pathlib import Path
 import sys
-readline = sys.stdin.readline
+sys.path.append(str(Path(__file__).resolve().parent))
+
+from rational import RationalBinarySearch
 
 def main():
+    readline = sys.stdin.readline
     while 1:
         p,n = map(int,readline().split())
         if p==n==0: break
