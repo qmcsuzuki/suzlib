@@ -1,6 +1,8 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/lesson/8/ITP2/2/ITP2_2_C
-from data_structure.BinaryHeap import *
+from pathlib import Path
 import sys
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+from data_structure import BinaryHeap
 readline = sys.stdin.readline
 
 def main():
