@@ -22,7 +22,7 @@ data:
       title: example/Helloworld.py
   - name: math/rational
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: math/rational/RationalBinarySearch.py
       title: math/rational/RationalBinarySearch.py
   - name: string
