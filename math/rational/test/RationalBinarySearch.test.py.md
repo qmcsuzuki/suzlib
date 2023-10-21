@@ -17,7 +17,7 @@ data:
     \  File \"/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208\n\
-    from pathlib import Path\nimport sys\nsys.path.append(str(Path(__file__).resolve().parent.parent))\n\
+    from pathlib import Path\nimport sys\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent))\n\
     \nfrom rational import RationalBinarySearch\n\ndef main():\n    readline = sys.stdin.readline\n\
     \    while 1:\n        p,n = map(int,readline().split())\n        if p==n==0:\
     \ break\n        \n        check = lambda a,b: a*a >= b*b*p\n        is_valid\
