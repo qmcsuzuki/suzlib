@@ -57,7 +57,7 @@ data:
       title: example/test/hello2.test.py
   - name: math/rational/test
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: math/rational/test/RationalBinarySearch.test.py
       title: math/rational/test/RationalBinarySearch.test.py
 layout: toppage
