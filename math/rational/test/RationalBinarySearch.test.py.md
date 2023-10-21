@@ -20,7 +20,7 @@ data:
     \  File \"/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208\n\
-    from math.rational.RationalBinarySearch import *\n\nimport sys\nreadline = sys.stdin.readline\n\
+    from .. import RationalBinarySearch\n\nimport sys\nreadline = sys.stdin.readline\n\
     \ndef main():\n    while 1:\n        p,n = map(int,readline().split())\n     \
     \   if p==n==0: break\n        \n        check = lambda a,b: a*a >= b*b*p\n  \
     \      is_valid = lambda a,b: a <= n and b <= n\n    \n        a,b,c,d = RationalBinarySearch(check,is_valid)\n\
@@ -30,7 +30,7 @@ data:
   isVerificationFile: true
   path: math/rational/test/RationalBinarySearch.test.py
   requiredBy: []
-  timestamp: '2023-10-22 00:26:08+09:00'
+  timestamp: '2023-10-22 00:40:21+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: math/rational/test/RationalBinarySearch.test.py
