@@ -18,9 +18,9 @@ data:
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/lesson/8/ITP2/2/ITP2_2_C\n\
     from pathlib import Path\nimport sys\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent))\n\
-    from data_structure import BinaryHeap\nreadline = sys.stdin.readline\n\ndef main():\n\
-    \    n,Q = map(int,readline().split())\n    q = [BinaryHeap([],lambda x:-x) for\
-    \ _ in range(n)]\n    for _ in range(Q):\n        t,i,*lst = map(int,readline().split())\n\
+    from data_structure.BibaryHeap import BinaryHeap\nreadline = sys.stdin.readline\n\
+    \ndef main():\n    n,Q = map(int,readline().split())\n    q = [BinaryHeap([],lambda\
+    \ x:-x) for _ in range(n)]\n    for _ in range(Q):\n        t,i,*lst = map(int,readline().split())\n\
     \        if t==0:\n            q[i].heappush(lst[0])\n        elif t==1:\n   \
     \         if q[i]: print(q[i].top())\n        else:\n            if q[i]: q[i].heappop()\n\
     \nif __name__ == '__main__':\n    main()\n"
