@@ -1,9 +1,9 @@
 # verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208
 from pathlib import Path
 import sys
-sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 
-from rational.RationalBinarySearch import RationalBinarySearch
+from math.rational.RationalBinarySearch import RationalBinarySearch
 
 def main():
     readline = sys.stdin.readline
