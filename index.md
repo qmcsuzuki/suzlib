@@ -20,6 +20,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/Helloworld.py
       title: example/Helloworld.py
+  - name: math/FPS
+    pages:
+    - icon: ':warning:'
+      path: math/FPS/convolution.py
+      title: math/FPS/convolution.py
   - name: math/rational
     pages:
     - icon: ':warning:'
