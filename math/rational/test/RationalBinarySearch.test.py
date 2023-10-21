@@ -1,5 +1,5 @@
 # verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208
-from .. import RationalBinarySearch
+from rational import RationalBinarySearch
 
 import sys
 readline = sys.stdin.readline
