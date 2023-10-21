@@ -22,7 +22,7 @@ data:
       title: example/Helloworld.py
   - name: math/rational
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: math/rational/RationalBinarySearch.py
       title: math/rational/RationalBinarySearch.py
   - name: string
@@ -55,5 +55,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/test/hello2.test.py
       title: example/test/hello2.test.py
+  - name: math/rational/test
+    pages:
+    - icon: ':x:'
+      path: math/rational/test/RationalBinarySearch.test.py
+      title: math/rational/test/RationalBinarySearch.test.py
 layout: toppage
 ---
