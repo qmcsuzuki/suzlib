@@ -14,25 +14,26 @@ data:
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.6/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
-  code: "def prefix_function(s):\n    n = len(s)\n    table = [0]*(n+1)\n    j = table[0]\
-    \ = -1\n    for i in range(n):\n        while j >= 0 and s[i] != s[j]:\n     \
-    \       j = table[j]\n        j += 1\n        table[i+1] = j# if i+1 < n and s[i+1]\
-    \ != s[j] else table[j] # #\u3092\u6D88\u3059\u3068KMP\n    return table\n\ndef\
-    \ KMP(text,pattern,table):\n    m = len(pattern)\n    cnt = k = 0\n    for ti\
-    \ in text:\n        while k >= 0 and pattern[k] != ti:\n            k = table[k]\n\
-    \        k += 1\n        if k >= m: #text[i-m+1:i+1] == pattern\n            cnt\
-    \ += 1\n            k = table[k]\n    return cnt\n\n  \n  \n"
+  code: "def RationalBinarySearch(check, is_valid):\n    assert check(1,0) and not\
+    \ check(0,1)\n    a,b,c,d,p,q = 0,1,1,0,1,1\n    while is_valid(p,q):\n      \
+    \  D = 1\n        t = 0\n        is_mid_OK = check(p,q)\n        x,y = (a,b) if\
+    \ is_mid_OK else (c,d)\n        while is_valid(x*D+p, y*D+q) and check(x*D+p,\
+    \ y*D+q) == is_mid_OK:\n            D <<= 1\n        while D > 1:\n          \
+    \  D >>= 1\n            if is_valid(x*(t+D)+p,y*(t+D)+q) and check(x*(t+D)+p,y*(t+D)+q)\
+    \ == is_mid_OK:\n                t += D\n        if is_mid_OK:\n            c,d\
+    \ = x*t+p,y*t+q\n        else:\n            a,b = x*t+p,y*t+q\n        p,q = a+c,\
+    \ b+d\n    return a,b,c,d\n\n"
   dependsOn: []
   isVerificationFile: false
-  path: string/KMPalgorithm.py
+  path: math/rational/RationalBinarySearch.py
   requiredBy: []
-  timestamp: '2023-08-06 18:23:16+09:00'
+  timestamp: '2023-10-22 00:23:03+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: string/KMPalgorithm.py
+documentation_of: math/rational/RationalBinarySearch.py
 layout: document
 redirect_from:
-- /library/string/KMPalgorithm.py
-- /library/string/KMPalgorithm.py.html
-title: string/KMPalgorithm.py
+- /library/math/rational/RationalBinarySearch.py
+- /library/math/rational/RationalBinarySearch.py.html
+title: math/rational/RationalBinarySearch.py
 ---

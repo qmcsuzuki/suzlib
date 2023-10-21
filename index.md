@@ -20,6 +20,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: example/Helloworld.py
       title: example/Helloworld.py
+  - name: math/rational
+    pages:
+    - icon: ':warning:'
+      path: math/rational/RationalBinarySearch.py
+      title: math/rational/RationalBinarySearch.py
   - name: string
     pages:
     - icon: ':warning:'
