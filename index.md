@@ -6,7 +6,7 @@ data:
     - icon: ':warning:'
       path: data_structure/BIT.py
       title: data_structure/BIT.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: data_structure/BinaryHeap.py
       title: data_structure/BinaryHeap.py
     - icon: ':warning:'
@@ -42,7 +42,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: data_structure/test/IntervalHeap.test.py
       title: data_structure/test/IntervalHeap.test.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: data_structure/test/binaryheap.test.py
       title: data_structure/test/binaryheap.test.py
   - name: example
