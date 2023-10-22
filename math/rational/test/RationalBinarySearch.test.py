@@ -3,7 +3,7 @@ from pathlib import Path
 import sys
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
 
-from math.rational.RationalBinarySearch import RationalBinarySearch
+from rational.RationalBinarySearch import RationalBinarySearch
 
 def main():
     readline = sys.stdin.readline
