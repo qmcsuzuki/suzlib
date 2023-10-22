@@ -3,9 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208
     links:
@@ -18,7 +18,7 @@ data:
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1208\n\
     from pathlib import Path\nimport sys\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent))\n\
-    \nfrom math.rational.RationalBinarySearch import RationalBinarySearch\n\ndef main():\n\
+    \nfrom rational.RationalBinarySearch import RationalBinarySearch\n\ndef main():\n\
     \    readline = sys.stdin.readline\n    while 1:\n        p,n = map(int,readline().split())\n\
     \        if p==n==0: break\n        \n        check = lambda a,b: a*a >= b*b*p\n\
     \        is_valid = lambda a,b: a <= n and b <= n\n    \n        a,b,c,d = RationalBinarySearch(check,is_valid)\n\
@@ -28,7 +28,7 @@ data:
   path: math/rational/test/RationalBinarySearch.test.py
   requiredBy: []
   timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: math/rational/test/RationalBinarySearch.test.py
 layout: document
